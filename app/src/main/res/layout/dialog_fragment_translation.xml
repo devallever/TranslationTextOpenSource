@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 输入栏 -->
+    <RelativeLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/btnTranslate"
+            android:background="@drawable/translate_bg">
+
+            <EditText
+                android:id="@+id/etInputContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:hint="@string/please_input_content"
+                android:textSize="14sp"
+                android:textColorHint="@color/default_theme_color"
+                android:background="#00000000"
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/ivInputClose"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/ivInputClose"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_close"
+                android:tint="@color/white"
+                android:rotation="90"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivInputHistory"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow"
+                android:tint="@color/white"
+                android:rotation="90"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btnTranslate"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="翻译"
+            android:src="@drawable/ic_translate"
+            android:scaleType="centerInside"
+            android:background="@color/default_gray_alpha" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inputContainer"
+        android:layout_marginTop="0dp">
+
+        <!-- 选择语言 -->
+        <include layout="@layout/include_select_language_bar" />
+
+        <!--  FrameLayout      -->
+        <FrameLayout
+            android:id="@+id/bannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemSelectLanguage"
+            android:visibility="gone" />
+
+        <!-- 结果 -->
+        <include
+            layout="@layout/include_translate_result_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bannerContainer"/>
+
+        <ImageView
+            android:id="@+id/ivRecognized"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_recognized_start"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

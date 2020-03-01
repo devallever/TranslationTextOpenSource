@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "${rootProject.ext.applicationId}"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName "${rootProject.ext.versionName}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        //BuildConfig添加的字段
+        //buildConfigField "int", "TEXT_FIELD", "2"
+        buildConfigField "String", "UMENG_APP_KEY", "\"${rootProject.ext.umengAppKey}\""
+
+        //在Manifest.xml中使用的值
+        manifestPlaceholders += [
+                UMENG_APP_KEY: rootProject.ext.umengAppKey
+        ]
+    }
+
+    //友盟多渠道----------------------------------------------------------------------------------------------------------
+    flavorDimensions "mark"
+    productFlavors {
+        google {}
+//        xiaomi {}
+//        baidu {}
+//        amazon {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    //友盟多渠道----------------------------------------------------------------------------------------------------------
+
+    //打包配置----------------------------------------------------------------
+    signingConfigs {
+        release {
+            storeFile file("${rootProject.ext.signingStoreFile}")
+            storePassword "${rootProject.ext.signingStorePassword}"
+            keyAlias "${rootProject.ext.signingKeyAlias}"
+            keyPassword "${rootProject.ext.signingKeyPassword}"
+        }
+    }
+    applicationVariants.all {
+        variant ->
+            if (variant.buildType.name.equals('release')) {
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "${defaultConfig.applicationId}_(Release)_V${defaultConfig.versionName}_C${defaultConfig.versionCode}_${variant.flavorName}_ad(Build${releaseTime()}).apk"
+                        output.outputFileName = new File(fileName)
+                        //com.allever.security.photo.browser_(Release)_V1.0_C1_(Build201908251506).apk
+                    }
+                }
+            }
+    }
+    //打包配置----------------------------------------------------------------
+
+    //解决打包失败------------------------------------------------------------
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    //解决打包失败------------------------------------------------------------
+
+
+    buildTypes {
+        release {
+            //混淆配置
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //打包配置
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+//打包时间
+static def releaseTime() {
+    return new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("Asia/Chongqing"))
+}
+
+//引入aar包需加
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //android
+    //local
+    implementation project(':permission')
+    implementation project(':common')
+    implementation project(':comment')
+    implementation project(':umeng')
+    implementation project(':recommend')
+    implementation project(':widget')
+    implementation(name: "Toolkit-1.1", ext: 'aar')
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.1.6'
+
+    //litepal
+    implementation 'org.litepal.android:kotlin:3.0.0'
+
+    //eventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation project(path: ':baiduvoice')
+
+}

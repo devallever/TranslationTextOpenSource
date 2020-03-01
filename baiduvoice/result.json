@@ -1,0 +1,19 @@
+{
+  "results_recognition": [
+    "你好"
+  ],
+  "origin_result": {
+    "corpus_no": 6759533970835285382,
+    "err_no": 0,
+    "result": {
+      "word": [
+        "你好"
+      ]
+    },
+    "sn": "32c3e661-0cce-45f1-a14b-546933336a5f",
+    "voice_energy": 38793.43359375
+  },
+  "error": 0,
+  "best_result": "你好",
+  "result_type": "final_result"
+}

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">文本翻译器</string>
+
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+
+    <string name="title_history">历史记录</string>
+    <string name="title_words">单词本</string>
+
+    <string name="share">分享</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="support">支持我们</string>
+    <string name="privacy">隐私政策</string>
+    <string name="permission_setting">设置权限</string>
+    <string name="setting_guide">使用说明</string>
+    <string name="about_right">版权所有@2018–2019 %s保留所有权利</string>
+
+    <!-- 翻译设置 -->
+    <string name="auto_play_audio">自动播放语音</string>
+    <string name="copy_to_clipboard">复制到粘贴板</string>
+    <string name="auto_translate">全局复制查词</string>
+    <string name="foreground_service_permanent">通知栏常驻</string>
+    <string name="default_translate_lang">设置默认翻译语言</string>
+    <string name="backup_restore">数据备份和恢复</string>
+
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+
+    <string name="guide">
+        1.如果您要使用复制查词功能，请同意允许后台弹出界面和显示悬窗这两个权限
+        \n\n2.若无法弹出授予权限的窗口，请自行到"设置->设置权限"中手动获取权限
+        \n\n3.建议开启通知栏常驻，以便更好的使用全局复制查词功能
+        \n\n4.如果您有什么建议或意见，请反馈给我们.</string>
+
+
+    <string name="permission_tips">我们需要
+        \n【存储权限】用于保存一些缓存数据
+        \n【手机信息】以便统计设备信息，做出更好的用户体验
+        \n 拒绝相应的权限将无法使用部分功能</string>
+    <string name="permission_accept">同意</string>
+    <string name="permission_reject">拒绝</string>
+
+    <string name="all">All</string>
+
+    <string name="select_lang">请选择语言</string>
+    <string name="already_copied_to_clipboard">已复制到剪贴板</string>
+    <string name="backup">备份</string>
+    <string name="restore">恢复</string>
+    <string name="del_backup">删除备份</string>
+    <string name="warm_tips">温馨提示</string>
+    <string name="backup_tips">这操作会将之前的备份覆盖，是否需要备份?</string>
+    <string name="del_backup_tips">这操作会将您的备份文件删除，是否需要删除?</string>
+    <string name="cancle">取消</string>
+    <string name="ok">确定</string>
+    <string name="please_input_content">请输入您要翻译的内容</string>
+    <string name="reject_permission_tips">拒绝权限将不能使用某些功能</string>
+    <string name="no_wire_store_permission_tips">没有写入存储权限</string>
+    <string name="no_read_store_permission_tips">没有读取存储权限</string>
+    <string name="remove_tips">是否移除选中单词?</string>
+    <string name="added_to_words">已添加到单词本</string>
+    <string name="removed_from_words">已从单词本中移除</string>
+    <string name="un_slelectd">未选中</string>
+    <string name="no_backup_data">无备份数据</string>
+    <string name="backup_success">备份成功</string>
+    <string name="backup_fail">备份失败</string>
+    <string name="restore_success">恢复成功</string>
+    <string name="restore_fail">恢复失败</string>
+    <string name="del_backup_success">删除备份成功</string>
+
+    <string name="translate_go">翻译</string>
+
+    <string name="share_content">【%s】这个应用很不错，推荐一下。获取地址\n
+https://play.google.com/store/apps/details?id=%s</string>
+
+    <string name="translation_more">更多</string>
+
+    <string name="notification_msg">%s正在为您提供翻译服务</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Text Translator</string>
+
+    <!-- 设置 -->
+    <string name="setting">Setting</string>
+
+    <string name="title_history">History</string>
+    <string name="title_words">Words</string>
+
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="about">About</string>
+    <string name="support">Support us</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="permission_setting">Setting permissions</string>
+    <string name="setting_guide">Instructions for use</string>
+    <string name="about_right">Copyright @2018–2019 %s All rights reserved</string>
+
+    <!-- 翻译设置 -->
+    <string name="auto_play_audio">Auto play voice</string>
+    <string name="copy_to_clipboard">Copy to pasteboard</string>
+    <string name="auto_translate">Global replication search</string>
+    <string name="foreground_service_permanent">Notification bar resident</string>
+    <string name="default_translate_lang">Set the default translation language</string>
+    <string name="backup_restore">Data backup and recovery</string>
+
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+
+    <string name="guide">
+        1. If you want to use the copy search function, please agree to allow the background pop-up interface and display the hanging window.
+        \n\n2. If the window for granting permission cannot be popped up, please go to "Settings -> Set Permissions" manually. Get permission
+        \n\n3. It is recommended to enable the notification bar to be resident, so as to better use the global copy search function
+        \n\n4. If you have any suggestions or comments, please send us feedback.</string>
+
+
+    <string name="permission_tips">We need
+        \n[storage privilege] to save some cached data
+        \n[phone information] to count device information and make better user experience
+        \n refuse corresponding permission Some features will not be available</string>
+    <string name="permission_accept">Agree</string>
+    <string name="permission_reject">Refuse</string>
+
+    <string name="all">All</string>
+
+    <string name="select_lang">Please select a language</string>
+    <string name="already_copied_to_clipboard">Already copied to clipboard</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="del_backup">Delete Backup</string>
+    <string name="warm_tips">Tips</string>
+    <string name="backup_tips">This will overwrite the previous backup. Do you need a backup?</string>
+    <string name="del_backup_tips">This operation will delete your backup file. Do you need to delete it?</string>
+    <string name="cancle">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="please_input_content">Please enter what you want to translate</string>
+    <string name="reject_permission_tips">Denying permissions will not be able to use certain features</string>
+    <string name="no_wire_store_permission_tips">No write permission</string>
+    <string name="no_read_store_permission_tips">No read storage permission</string>
+    <string name="remove_tips">Do you want to remove the selected word?</string>
+    <string name="added_to_words">Added to word book</string>
+    <string name="removed_from_words">Has been removed from the word book</string>
+    <string name="un_slelectd">Unselected</string>
+    <string name="no_backup_data">No backup data</string>
+    <string name="backup_success">Backup success</string>
+    <string name="backup_fail">Backup failed</string>
+    <string name="restore_success">Successful recovery</string>
+    <string name="restore_fail">Recovery failure</string>
+    <string name="del_backup_success">Delete backup successfully</string>
+
+    <string name="translate_go">Go</string>
+
+    <string name="share_content">【%s】This application is very good, I recommend it. Get address \n
+https://play.google.com/store/apps/details?id=%s</string>
+
+    <string name="translation_more">More</string>
+
+    <string name="notification_msg">%s is providing you with translation services</string>
+</resources>

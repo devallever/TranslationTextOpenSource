@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history"
+            android:title="@string/title_history" />
+        <item
+            android:id="@+id/nav_word"
+            android:icon="@drawable/ic_book"
+            android:title="@string/title_words" />
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/ic_backup"
+            android:title="@string/backup_restore" />
+
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/ic_question"
+            android:title="@string/setting_guide" />
+    </group>
+
+    <item android:title="@string/translation_more">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_setting"
+                android:title="@string/setting" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_support"
+                android:title="@string/support" />
+        </menu>
+    </item>
+
+</menu>

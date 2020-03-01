@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="1dp">
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Language"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

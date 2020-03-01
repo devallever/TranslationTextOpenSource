@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 标题栏 -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_top_bar_height"
+        android:background="@drawable/top_bar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="@dimen/default_icon_width"
+                android:layout_height="@dimen/default_icon_height"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/top_bar_icon_color_filter"
+                android:scaleType="centerInside" />
+
+            <!-- 标题 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_left"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/top_bar_tv_color" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="@dimen/default_icon_height"
+                android:layout_height="@dimen/default_icon_width"
+                android:scaleType="centerInside"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>

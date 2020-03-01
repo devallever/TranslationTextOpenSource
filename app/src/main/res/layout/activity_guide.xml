@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color">
+
+    <include layout="@layout/include_top_bar" />
+
+    <TextView
+        android:id="@+id/tvGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide"
+        android:layout_below="@+id/top_bar"
+        android:padding="10dp" />
+
+    <com.allever.lib.ui.widget.AnimationButton
+        android:id="@+id/btnFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:text="@string/feedback"
+        android:textColor="@color/white"
+        android:background="@drawable/common_btn_bg"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGuide"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

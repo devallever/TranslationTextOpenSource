@@ -1,0 +1,19 @@
+include ':app', ':baiduvoice'
+
+include ':permission'
+project(':permission').projectDir = new File(settingsDir, '../AndroidDependencyLib/permission')
+include ':common'
+project(':common').projectDir = new File(settingsDir, '../AndroidDependencyLib/common')
+include ':umeng'
+project(':umeng').projectDir = new File(settingsDir, '../AndroidDependencyLib/umeng')
+
+include ':recommend'
+project(':recommend').projectDir = new File(settingsDir, '../AndroidDependencyLib/recommend')
+include ':httpsglide'
+project(':httpsglide').projectDir = new File(settingsDir, '../AndroidDependencyLib/httpsglide')
+
+include ':comment'
+project(':comment').projectDir = new File(settingsDir, '../AndroidDependencyLib/comment')
+
+include ':widget'
+project(':widget').projectDir = new File(settingsDir, '../AndroidUIKit/widget')

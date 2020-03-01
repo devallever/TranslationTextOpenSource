@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.allever.app.translation.text">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 如果需要精确定位的话请加上此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name="com.allever.app.translation.text.app.MyApp"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreenStyle"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.allever.app.translation.text.ui.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.allever.app.translation.text.ui.MainDrawerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.translation.text.ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.translation.text.ui.MainTabActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.translation.text.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.translation.text.ui.AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.allever.app.translation.text.ui.DialogTranslateActivity"
+            android:theme="@style/dialogstyle"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.allever.app.translation.text.ui.GuideActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.allever.app.translation.text.ui.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.translation.text.ui.BackupRestoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.translation.text.ui.WordActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.allever.app.translation.text.function.TranslationService"
+            android:priority="1000" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APP_KEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!--讯飞广告 替换为平台注册的appid-->
+        <meta-data
+            android:name="IFLYTEK_APPKEY_AD"
+            android:value="5dc26029" />
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="17780405" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="vUsYCYkaCCgwKFpQnEIk44ue" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="bZ17uLxDjxqcGipxc7tFrb9gGBpDzozZ" />
+
+    </application>
+
+</manifest>

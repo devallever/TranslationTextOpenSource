@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="RtlSymmetry">
+
+            <RelativeLayout
+                android:id="@+id/itemDefaultTranslateLang"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_item_label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/default_translate_lang" />
+
+                <TextView
+                    android:id="@+id/tvDefaultTranslateLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/english"
+                    android:layout_toStartOf="@id/ivDefaultTranslateLang"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/ivDefaultTranslateLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:src="@drawable/ic_arrow" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/itemAutoPlayAudio"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_item_label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/auto_play_audio"
+                    android:layout_toStartOf="@id/switchAutoPlayAudio" />
+
+                <com.allever.android.widget.MySwitchCompat
+                    android:id="@+id/switchAutoPlayAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/itemCopyToClipBoard"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_item_label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/copy_to_clipboard"
+                    android:layout_toStartOf="@id/switchCopyToClipboard" />
+
+                <com.allever.android.widget.MySwitchCompat
+                    android:id="@+id/switchCopyToClipboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/itemAutoTranslate"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_item_label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/auto_translate"
+                    android:layout_toStartOf="@id/switchAutoTranslate" />
+
+                <com.allever.android.widget.MySwitchCompat
+                    android:id="@+id/switchAutoTranslate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/itemForegroundService"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_item_label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/foreground_service_permanent"
+                    android:layout_toStartOf="@id/switchForegroundService" />
+
+                <com.allever.android.widget.MySwitchCompat
+                    android:id="@+id/switchForegroundService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/itemBackupRestore"
+                style="@style/setting_item">
+
+                <TextView
+                    style="@style/setting_item_label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/backup_restore" />
+
+                <ImageView
+                    android:id="@+id/ivBackRestore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:src="@drawable/ic_arrow" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_line" />
+
+            <FrameLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/divider_color" />
+
+
+            <TextView
+                android:id="@+id/setting_tv_guide"
+                style="@style/setting_item_label"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:text="@string/setting_guide" />
+
+            <include layout="@layout/include_divider_line" />
+
+            <TextView
+                android:id="@+id/setting_tv_permission"
+                style="@style/setting_item_label"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:text="@string/permission_setting" />
+
+            <include layout="@layout/include_divider_line" />
+
+            <TextView
+                android:id="@+id/setting_tv_share"
+                style="@style/setting_item_label"
+                android:drawableEnd="@drawable/ic_share"
+                android:text="@string/share"
+                android:visibility="visible" />
+
+            <include
+                layout="@layout/include_divider_line"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/setting_tv_feedback"
+                style="@style/setting_item_label"
+                android:drawableEnd="@drawable/ic_feedback"
+                android:text="@string/feedback" />
+
+            <include layout="@layout/include_divider_line" />
+
+            <TextView
+                android:id="@+id/setting_tv_about"
+                style="@style/setting_item_label"
+                android:drawableEnd="@drawable/ic_about"
+                android:text="@string/about" />
+
+            <include layout="@layout/include_divider_line" />
+
+            <TextView
+                android:id="@+id/setting_tv_support"
+                style="@style/setting_item_label"
+                android:drawableEnd="@drawable/ic_support"
+                android:text="@string/support"
+                android:visibility="visible" />
+
+            <include
+                layout="@layout/include_divider_line"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/banner_container_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#2196f3</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="default_gray">#eeeeee</color>
+    <color name="default_gray_alpha">#aaeeeeee</color>
+
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#aa212121</color>
+
+    <color name="blue_gray_800">#37474F</color>
+    <color name="blue_gray_900">#263238</color>
+
+    <color name="default_theme_color">@color/colorPrimary</color>
+    <color name="default_background_color">@color/white</color>
+
+    <color name="default_top_bar_background_color">@color/gray_700</color>
+    <color name="default_icon_color_filter">@color/black</color>
+    <color name="default_btn_color_filter">@color/black</color>
+    <color name="default_btn_background">@color/black</color>
+    <color name="default_tv_color">@color/black</color>
+
+    <color name="top_bar_icon_color_filter">@color/white</color>
+    <color name="top_bar_tv_color">@color/white</color>
+
+    <color name="divider_color">#19474747</color>
+
+    <color name="main_tab_highlight">@color/colorPrimary</color>
+    <color name="main_tab_unselect_color">#8a8a8a</color>
+
+    <color name="word_item_bottom_background">#313131</color>
+
+    <color name="start_color">#0288d1</color>
+    <color name="end_color">#1976d2</color>
+
+    <color name="et_hint_color">@color/gray_700</color>
+
+</resources>

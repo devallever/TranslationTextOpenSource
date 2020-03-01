@@ -6,6 +6,28 @@
 
 # Files for the ART/Dalvik VM
 *.dex
+# Custom
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+
+# Built application files
+*.apk
+*.ap_
+
+# Files for the ART/Dalvik VM
 
 # Java class files
 *.class
@@ -61,6 +83,17 @@ captures/
 
 # Google Services (e.g. APIs or Firebase)
 # google-services.json
+.idea/caches
+
+# Keystore files
+# Uncomment the following line if you do not want to check your keystore files in.
+#*.jks
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
 
 # Freeline
 freeline.py

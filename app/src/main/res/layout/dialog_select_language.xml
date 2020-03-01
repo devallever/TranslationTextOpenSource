@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/default_theme_color"
+        android:textColor="@color/white"
+        android:text="@string/select_lang"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <com.allever.android.recyclerview.widget.MyRecyclerView
+        android:id="@+id/rvLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_below="@id/tvTitle"
+        android:background="@color/default_gray_alpha" />
+
+</RelativeLayout>

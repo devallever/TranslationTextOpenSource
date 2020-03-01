@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 全屏 -->
+    <style name="FullScreenStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!-- Setting -->
+    <style name="setting_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <!-- Setting -->
+    <style name="setting_item_label" parent="setting_item">
+        <item name="android:textColor">@color/default_tv_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="dialogstyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TranslationDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

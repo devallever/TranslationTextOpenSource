@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/default_gray">
+
+    <include layout="@layout/include_top_bar" />
+
+    <!-- 选择语言 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_above="@+id/bannerContainer">
+
+        <!-- 选择语言 -->
+        <include
+            layout="@layout/include_select_language_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <com.allever.android.recyclerview.widget.MyRecyclerView
+            android:id="@+id/rvHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/itemSelectLanguage"
+            android:layout_above="@+id/rlBottomToolBar"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="0dp"
+            android:background="@drawable/history_rv_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rlBottomToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/word_item_bottom_background"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true">
+
+            <CheckBox
+                android:id="@+id/cbBottomBarCheckAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_style"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_marginStart="20dp" />
+
+            <ImageView
+                android:id="@+id/ivBottomBarBack"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/ivBottomBarDelete"
+                android:layout_toLeftOf="@+id/ivBottomBarDelete"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_bottom_bar_back"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/ivBottomBarDelete"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/word_item_list_margin"
+                android:layout_marginRight="@dimen/word_item_list_margin"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/white"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--  FrameLayout      -->
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
