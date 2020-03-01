@@ -1,4 +1,4 @@
-# TranslationTextOpenSource-文本翻译器开源版
+# TextTranslatorOpenSource-文本翻译器开源版
 
 > 仅用于学习研究之用，请勿商用
 
