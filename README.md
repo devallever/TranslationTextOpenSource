@@ -723,8 +723,7 @@ object BaiduVoiceHelper : EventListener {
 
 ## 更多项目
 
-> [VirtualCallOpenSource-虚拟来电开源版]([https://github.com/devallever/VirtualCallOpenSource](https://github.com/devallever/VirtualCallOpenSource)
-)
+> [VirtualCallOpenSource-虚拟来电开源版](https://github.com/devallever/VirtualCallOpenSource)
 
 > [LoseWeight-减肥健身App开源版](https://github.com/devallever/LoseWeightOpenSOurce)
 
