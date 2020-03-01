@@ -735,9 +735,7 @@ object BaiduVoiceHelper : EventListener {
 谢谢。
 
 我的Github
-> [[https://github.com/devallever](https://github.com/devallever)
-]([https://github.com/devallever](https://github.com/devallever)
-)
+> [https://github.com/devallever](https://github.com/devallever)
  
  
  
