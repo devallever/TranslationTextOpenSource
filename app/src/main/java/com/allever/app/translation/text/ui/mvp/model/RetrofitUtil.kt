@@ -19,7 +19,7 @@ import rx.schedulers.Schedulers
  */
 
 object RetrofitUtil {
-    private val BASE_URL = "https://translate.google.cn/"
+    private const val BASE_URL = "https://translate.google.cn/"
     private val retrofit: Retrofit
     private val retrofitService: RetrofitService
 
