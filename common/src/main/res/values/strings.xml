@@ -1,0 +1,13 @@
+<resources>
+    <string name="common_app_name">Common</string>
+
+    <string name="common_click_again_to_exit">Please click again to exit</string>
+
+    <string name="common_feed_back_subject">Your suggestion</string>
+    <string name="common_feed_back_content">We would love to hear your suggestions:</string>
+    <string name="common_select_mail_app">Please select a mail application</string>
+    <string name="common_has_not_google_service">Google services are not installed</string>
+    <string name="common_share_to">share to</string>
+    <string name="common_share_tips_no_intent">No shareable apps found</string>
+
+</resources>

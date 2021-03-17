@@ -81,16 +81,6 @@
 ![](https://upload-images.jianshu.io/upload_images/2359130-84947802cce5f6d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-## 如何使用
-
-- 项目需要依赖AndroidDependencyLib中的一个或多个模块，请预先配置
-> [https://github.com/devallever/AndroidDependencyLib](https://github.com/devallever/AndroidDependencyLib)
-
-- 把AndroidDependencyLib项目和本项目放同一个目录下
-
-- 项目需要依赖AndroidUIKit中的一个或多个模块，请预先配置
-> [https://github.com/devallever/AndroidUIKit](https://github.com/devallever/AndroidUIKit)
-
 
 ## 接口
 

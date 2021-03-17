@@ -1,0 +1,11 @@
+<resources>
+    <string name="recommend_app_name">recommend</string>
+
+    <string name="recommend">App Recommendation</string>
+    <string name="recommend_size">Size</string>
+    <string name="recommend_version">Ver</string>
+
+    <string name="recommend_dialog_content">We recommend the following interesting apps or games for you</string>
+    <string name="recommend_dialog_more">More</string>
+    <string name="recommend_dialog_exit">No thanks</string>
+</resources>

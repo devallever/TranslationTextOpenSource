@@ -1,0 +1,7 @@
+<resources>
+    <string name="comment_app_name">comment</string>
+
+    <string name="comment_content">您的好评是我最大的支持与鼓励</string>
+    <string name="comment_accept">评价我们</string>
+    <string name="comment_reject">不用谢谢</string>
+</resources>

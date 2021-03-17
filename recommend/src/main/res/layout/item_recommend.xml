@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivLogo"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="@string/recommend_app_name"/>
+
+    <TextView
+        android:id="@+id/tvAppIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivLogo"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:layout_below="@+id/tvAppName"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tvAppSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivLogo"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:layout_below="@+id/tvAppIntroduce"
+        android:layout_marginTop="5dp"
+        android:text="大小：3.8 MB"/>
+
+    <TextView
+        android:id="@+id/tvAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvAppSize"
+        android:layout_toEndOf="@+id/tvAppSize"
+        android:layout_below="@+id/tvAppIntroduce"
+        android:layout_marginTop="5dp"
+        android:text="版本：1.0"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:background="@drawable/tag_bg"
+        android:text=""
+        android:visibility="gone"
+        android:gravity="center"/>
+
+</RelativeLayout>

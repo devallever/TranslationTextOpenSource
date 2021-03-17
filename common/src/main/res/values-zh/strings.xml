@@ -1,0 +1,13 @@
+<resources>
+    <string name="common_app_name">Common</string>
+
+    <string name="common_click_again_to_exit">Please click again to exit</string>
+
+    <string name="common_feed_back_subject">您的建议</string>
+    <string name="common_feed_back_content">我们很希望能得到您的建议：</string>
+    <string name="common_select_mail_app">请选择邮件类应用</string>
+    <string name="common_has_not_google_service">没安装谷歌服务</string>
+    <string name="common_share_to">分享到</string>
+    <string name="common_share_tips_no_intent">没有找到可分享的应用</string>
+
+</resources>

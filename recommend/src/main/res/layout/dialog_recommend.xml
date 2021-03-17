@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="280dp"
+    android:orientation="vertical"
+    android:background="@drawable/common_dialog_bg"
+    android:layout_gravity="center_horizontal">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/recommend_face"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:padding="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recommend_dialog_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center">
+
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/recommend_face"
+            android:layout_margin="10dp"
+            android:visibility="visible">
+            <com.allever.lib.recommend.AnimationImageView
+                android:id="@+id/ivRecommendA"
+                android:layout_weight="1"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/recommend_face"
+                android:visibility="visible"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_margin="1dp"
+                android:text="Ad"
+                android:textColor="#00cffe"
+                android:textSize="10dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/recommend_face"
+            android:layout_margin="10dp"
+            android:visibility="visible">
+            <com.allever.lib.recommend.AnimationImageView
+                android:id="@+id/ivRecommendB"
+                android:layout_weight="1"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/recommend_face"
+                android:visibility="visible"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_margin="1dp"
+                android:text="Ad"
+                android:textColor="#00cffe"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/recommend_face"
+            android:layout_margin="10dp"
+            android:visibility="visible">
+            <com.allever.lib.recommend.AnimationImageView
+                android:id="@+id/ivRecommendC"
+                android:layout_weight="1"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/recommend_face"
+                android:visibility="visible"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_margin="1dp"
+                android:text="Ad"
+                android:textColor="#00cffe"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvRefuse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/recommend_dialog_exit"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="#cccccc"/>
+
+        <TextView
+            android:id="@+id/tvMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/recommend_dialog_more"
+            android:textStyle="bold"
+            android:textColor="#00cffe"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <declare-styleable name="CircleImageView">-->
+<!--        <attr name="civ_border_width" format="dimension" />-->
+<!--        <attr name="civ_border_color" format="color" />-->
+<!--        <attr name="civ_border_overlay" format="boolean" />-->
+<!--        <attr name="civ_circle_background_color" format="color" />-->
+<!--    </declare-styleable>-->
+
+    <style name="CommonCustomDialogStyle" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

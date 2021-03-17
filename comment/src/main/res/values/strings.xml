@@ -1,0 +1,7 @@
+<resources>
+    <string name="comment_app_name">comment</string>
+
+    <string name="comment_content">Your praise is my greatest support and encouragement</string>
+    <string name="comment_accept">Rate us</string>
+    <string name="comment_reject">No thanks</string>
+</resources>

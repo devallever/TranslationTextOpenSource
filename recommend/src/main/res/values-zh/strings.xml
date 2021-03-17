@@ -1,0 +1,11 @@
+<resources>
+    <string name="recommend_app_name">应用推荐</string>
+
+    <string name="recommend">应用推荐</string>
+    <string name="recommend_size">大小</string>
+    <string name="recommend_version">版本</string>
+
+    <string name="recommend_dialog_content">我们为您推荐以下有趣的应用或游戏</string>
+    <string name="recommend_dialog_more">更多</string>
+    <string name="recommend_dialog_exit">不用谢谢</string>
+</resources>
